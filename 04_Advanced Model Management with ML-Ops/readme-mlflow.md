@@ -129,7 +129,7 @@ Open a terminal and run the following command, replacing the URIs with your chos
 mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow-artifacts
 
 
-mlflow server --backend-store-uri sqlite:////home/mlflow/mlflow_server/metrics_store/mlflow.db --default-artifact-root /home/mlflow/mlflow_server/artifact_store/
+mlflow server --backend-store-uri sqlite:////home/mlflow/mlflow_server/metrics_store/mlflow.db --default-artifact-root file:///home/mlflow/mlflow_server/artifact_store/
 ```
 
 Replace `sqlite:///mlflow.db` with your MySQL URI if you're using MySQL, and adjust `./mlflow-artifacts` to the path where you want artifacts stored.
