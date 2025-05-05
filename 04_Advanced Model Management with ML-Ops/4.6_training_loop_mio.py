@@ -59,8 +59,8 @@ test_dataset.to_parquet("data/test.parquet")
 # load datasets
 # dopo che abbiamo slavato i datasets sul disco li possiamo registrare su MLflow come 
 #artifacts
-mlflow.log_artifacts('data/train.parquet', artifact_path='datasets')
-mlflow.log_artifacts("data/test.parquet", artifact_path="datasets")
+mlflow.log_artifact('data/train.parquet', artifact_path='datasets')
+mlflow.log_artifact("data/test.parquet", artifact_path="datasets")
 
 # per velocizzare un po il training creiamo dei data loaders per i nostri datasets
 # questo ci consente di streammare i data alla training pipeline più efficientemente
